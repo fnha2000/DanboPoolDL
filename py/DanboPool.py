@@ -28,7 +28,7 @@ def editConfig(config):
     config['Settings']['DownloadDirectory'] = input('Enter your default download directory.\n')
     newOrig = input('Do you want to download the original size files instead of the resampled versions?\n'
                     '(Warning: Some original files are very large.)\nPress enter for default "No"\n')
-    if newOrig.lower() == 'Yes':
+    if newOrig.lower() == 'yes':
         config['Settings']['DownloadOriginal'] = 'Yes'
     saveConfig(config)
 
